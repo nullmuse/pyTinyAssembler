@@ -16,8 +16,11 @@ def init_mem(num):
 
 def negjmp(jmp):
    if '-' in jmp:
-      return int(jmp[2:])
-   return int(jmp,16)
+      kl = int(jmp[3:],16) 
+      kl =  kl  - kl * 2
+      return kl
+      
+   return int(jmp,10)
 
 
 
