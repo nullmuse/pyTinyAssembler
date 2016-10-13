@@ -1,0 +1,33 @@
+mov & 0
+mov [22] 133 
+mov [&] 99
+add & 1
+mov [&] 111
+add & 1
+mov [&] 97
+add & 1
+mov [&] 108
+mov & 0 
+aprint [&]
+add & 1
+jgt -2 [&] 0
+mov & 0 
+xor [&] [22]
+add & 1
+jls -2 & 4
+mov & [10]
+add [10] 1
+mov [9] [&]
+add [11] 1
+mov & [11]
+and [&] [9]
+add & 1
+jls -4 & 4
+mov [11] [10]
+jls -9 [10] 4
+mov [10] 0
+mov [11] 0
+add [12] 1
+add [22] 1
+jls -17 [12] 100
+halt

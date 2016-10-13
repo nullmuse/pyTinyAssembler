@@ -1,0 +1,9 @@
+mov & 0
+mov [&] 97
+add & 1
+jls -2 & 20
+mov & 0 
+xor [&] 1337
+add & 1
+jls -2 & 20
+halt

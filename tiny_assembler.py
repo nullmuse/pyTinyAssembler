@@ -14,9 +14,9 @@ def convert_source(filename):
       item = item.strip()
       print(item)
       op_code = item.split()[0]
-      assembly.append(opcodes[op_code.upper()].assemble(item))
+      assembly.append(opcodes[op_code.upper()].assemble(taxtrans(item)))
       
-   return assembly 
+   return (assembly,source) 
 
 
 def asm_writeout(assembly):
@@ -30,6 +30,6 @@ def asm_writeout(assembly):
 
 if __name__ == '__main__':
    from sys import argv
-   asm = convert_source(argv[1])
+   asm,source = convert_source(argv[1])
    asm_writeout(asm)
-   execute(asm)
+   execute(asm,source)
