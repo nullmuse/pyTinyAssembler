@@ -20,7 +20,7 @@ def negjmp(jmp):
       kl =  kl  - kl * 2
       return kl
       
-   return int(jmp,10)
+   return int(jmp,16)
 
 
 
